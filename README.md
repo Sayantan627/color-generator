@@ -1,3 +1,13 @@
+## Live Site URL
+
+[@Netlify](https://color-generator-sayantan627.netlify.app/)
+
+## Built with
+
+- ReactJs
+- Values.js
+- React Toastify
+
 ## Figma URL
 
 [Color generator](https://www.figma.com/file/P2SJ5QGOZvi49EOpoVTvsT/Color-generator?node-id=0%3A1&t=ZY2gnIJ9zGTSXPW8-1)
@@ -28,8 +38,8 @@ npm i values.js
 ```
 
 ```js
-import Values from 'values.js';
-new Values('#f15025').all(10);
+import Values from "values.js";
+new Values("#f15025").all(10);
 ```
 
 #### Render Colors
@@ -53,21 +63,21 @@ npm i react-toastify
 main.jsx
 
 ```js
-import 'react-toastify/dist/ReactToastify.css';
+import "react-toastify/dist/ReactToastify.css";
 ```
 
 App.jsx
 
 ```js
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer, toast } from "react-toastify";
 
-toast.success('awesome');
-toast.error('error message');
+toast.success("awesome");
+toast.error("error message");
 
 return (
   <main>
     ...............
-    <ToastContainer position='top-center' />
+    <ToastContainer position="top-center" />
   </main>
 );
 ```
@@ -88,13 +98,13 @@ Here is an example of how to save a string value to the clipboard using the Clip
 async function copyToClipboard(text) {
   try {
     await navigator.clipboard.writeText(text);
-    console.log('Text copied to clipboard');
+    console.log("Text copied to clipboard");
   } catch (error) {
-    console.error('Failed to copy text: ', error);
+    console.error("Failed to copy text: ", error);
   }
 }
 
-const textToCopy = 'Hello, world!';
+const textToCopy = "Hello, world!";
 copyToClipboard(textToCopy);
 ```
 
